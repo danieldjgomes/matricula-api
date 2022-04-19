@@ -1,7 +1,7 @@
 package br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.api;
 
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.domain.dominio.Alerta;
-import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.AlertaDAO;
+import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.alerta.AlertaDAO;
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.framework.repositorios.DAO.alerta.AlertaRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

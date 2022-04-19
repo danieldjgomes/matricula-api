@@ -2,7 +2,7 @@
 //
 //import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.app.dominio.excessoes.RepositorioDisciplinaIndisponivelException;
 //import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.domain.dominio.Disciplina;
-//import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.DisciplinaDAO;
+//import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.disciplina.DisciplinaDAO;
 //import org.springframework.stereotype.Repository;
 //
 //import javax.persistence.EntityManager;

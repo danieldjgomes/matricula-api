@@ -1,6 +1,6 @@
 package br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.framework.repositorios.DAO.alerta;
 
-import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.AlertaDAO;
+import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.alerta.AlertaDAO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,4 +1,4 @@
-package br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO;
+package br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.alerta;
 
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.domain.dominio.Status;
 import lombok.AllArgsConstructor;
