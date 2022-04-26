@@ -40,6 +40,19 @@ public class DisciplinaDAO {
 
     private String campus;
 
+    public DisciplinaDAO(Integer identificadorUFABC, String nomeDisciplina, Periodo periodo, int vagasDisponibilizadas, int vagasIngressantes, int vagasDisponiveis, int creditos, String codigo, String campus) {
+        this.identificadorUFABC = String.valueOf(identificadorUFABC);
+        this.nomeDisciplina = nomeDisciplina;
+        this.periodo = periodo;
+        this.vagasDisponibilizadas = vagasDisponibilizadas;
+        this.vagasIngressantes = vagasIngressantes;
+        this.vagasDisponiveis = vagasDisponiveis;
+        this.creditos = creditos;
+        this.codigo = codigo;
+        this.campus = campus;
+    }
+
+
 
     public Disciplina toDomain() {
         Disciplina disciplina = new Disciplina();
