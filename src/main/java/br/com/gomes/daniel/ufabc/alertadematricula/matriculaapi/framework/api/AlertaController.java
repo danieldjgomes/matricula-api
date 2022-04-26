@@ -29,7 +29,7 @@ public class AlertaController {
     }
 
     @GetMapping ("/{id}")
-    ResponseEntity<DisciplinaDAO> buscarAlertaPorDisciplina(@PathVariable String id) {
+    ResponseEntity<DisciplinaDAO> buscarDisciplinaPorAlerta(@PathVariable String id) {
         Object[][] objetoMapeado = alertaRepository.buscarAlerta(id);
         if( objetoMapeado.length == 0){
             return ResponseEntity.notFound().build();
