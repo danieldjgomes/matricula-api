@@ -46,3 +46,6 @@ Módulo que consome as mensagens de notificações enviadas pelo gerenciador de 
 
 **Cloud:** Amazon Web Service(AWS), Heroku, Vercel
 
+## Relevância acadêmica
+Este projeto foi realizado por meio de um projeto acadêmico gerido e orientado pelos docentes da Universidade Federal do ABC, a publicação está disponível aqui.
+<a href="https://github.com/danieldjgomes/matricula-api/blob/main/UFABC%20TRACK_%20Uma%20aplica%C3%A7%C3%A3o%20web%20para%20notificar%20disponibilidade%20de%20matr%C3%ADculas%20em%20disciplinas%20da%20UFABC.pdf" target="_blank">UFABC Track: Uma aplicação web para notificar disponibilidade de matrículas em disciplinas da UFABC</a>
