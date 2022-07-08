@@ -1,6 +1,7 @@
 package br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.configuracao;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.Bean;
@@ -20,32 +21,35 @@ import java.util.HashMap;
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(entityManagerFactoryRef = "entityManagerFactory", basePackages = {
-        "br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.repositorios.alerta" })
+        "br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.framework.repositorios" })
 public class ConfiguracaoAlertaDB{
 
-    @Primary
+    @Value("${general.connections.jdbc}")
+    private String URL_BANCO;
+
+//    @Primary
     @Bean(name = "dataSource")
-    @ConfigurationProperties(prefix = "spring.alerta.datasource")
+//    @ConfigurationProperties(prefix = "spring.alerta.datasource")
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl(System.getProperty("dbUrlAlerta"));
+        dataSource.setUrl(URL_BANCO);
         return dataSource;
     }
 
-    @Primary
+//    @Primary
     @Bean(name = "entityManagerFactory")
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder,
-                                                                             @Qualifier("dataSource") DataSource dataSource) {
+                                                                             DataSource dataSource) {
 
         HashMap<String, Object> properties = new HashMap<>();
         return builder.dataSource(dataSource).properties(properties)
                 .packages("br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO").build();
     }
 
-    @Primary
+//    @Primary
     @Bean(name = "transactionManager")
     public PlatformTransactionManager transactionManager(
-            @Qualifier("entityManagerFactory") EntityManagerFactory entityManagerFactory) {
+            EntityManagerFactory entityManagerFactory) {
 
         return new JpaTransactionManager(entityManagerFactory);
     }

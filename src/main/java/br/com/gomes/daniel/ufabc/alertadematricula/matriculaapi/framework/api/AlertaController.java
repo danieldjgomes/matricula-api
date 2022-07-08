@@ -4,7 +4,7 @@ import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.domain.dominio.A
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.domain.dominio.Periodo;
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.AlertaDAO;
 import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.dominio.DAO.DisciplinaDAO;
-import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.framework.repositorios.DAO.alerta.AlertaRepository;
+import br.com.gomes.daniel.ufabc.alertadematricula.matriculaapi.framework.framework.repositorios.DAO.AlertaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
